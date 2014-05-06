@@ -12,7 +12,12 @@ var app = angular.module('gdgContentManagerApp', [
 
 app.config(['$routeSegmentProvider', '$routeProvider', '$httpProvider', 'RestangularProvider', function ($routeSegmentProvider, $routeProvider, $httpProvider, RestangularProvider) {
     $httpProvider.defaults.headers = {
-        "Content-Type": "application/json"
+        post: {
+            "Content-Type": "application/json"
+        },
+        put: {
+            "Content-Type": "application/json"
+        }
     };
     RestangularProvider.setBaseUrl('https://127.0.0.1/api/');
 
