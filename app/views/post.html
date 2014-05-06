@@ -1,0 +1,15 @@
+<form ng-submit="addPost()">
+    <div class="form-group">
+        <label for="title">Título</label>
+        <input type="text" class="form-control" id="title" placeholder="Ingresa un título" ng-model="post.title">
+    </div>
+    <div class="form-group">
+        <label for="content">Email address</label>
+        <textarea class="form-control" id="content" placeholder="Ingresa el contenido"  ng-model="post.content"></textarea>
+    </div>
+    <div class="form-group">
+        <label for="cover">Email address</label>
+        <input type="text" class="form-control" id="cover" placeholder="Ingresa un cover" ng-model="post.cover">
+    </div>
+    <button type="submit" class="btn btn-default">Agregar</button>
+</form>
